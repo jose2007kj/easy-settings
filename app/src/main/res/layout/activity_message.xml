@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- EditText for Writing Message -->
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your message here"
+        android:padding="10dp"
+        android:minHeight="100dp"
+        android:gravity="top|start" />
+
+    <!-- Button to Preview Message -->
+    <Button
+        android:id="@+id/btnPreviewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preview Message"
+        android:layout_marginTop="16dp"
+        android:padding="10dp" />
+
+    <!-- TextView for Message Preview -->
+    <TextView
+        android:id="@+id/textViewPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start" />
+
+    <!-- Button to Forward Message to WhatsApp -->
+    <Button
+        android:id="@+id/btnSendToWhatsApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send to WhatsApp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:enabled="false" /> <!-- Disabled initially -->
+</LinearLayout>
